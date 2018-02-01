@@ -35,7 +35,7 @@ contract Token {
     address public owner = msg.sender;
 
     string public name = "\"GES\" project utility token";
-    string public symbol = "GES";
+    string public symbol = "FUNT";
 
     bool public upgradable = false;
     bool public upgraderSet = false;
@@ -171,13 +171,13 @@ contract Token {
         //values are in natural format
 
         address preICOReserveAddress = 0xDE4c839cee9464212C76473420bb87eF0Da8a617;
-        mint(preICOReserveAddress, 3000000000);
+        mint(preICOReserveAddress, 2000000000);
 
         address teamReserveAddress = 0x3c0A403245F1C144207935b65da418Ddcc29c94E;
-        mint(teamReserveAddress, 1300000000);
+        mint(teamReserveAddress, 1500000000);
         
         address foundationReserveAddress = 0x6a6a0b4aaa60E97386F94c5414522159b45DEdE8;
-        mint(foundationReserveAddress, 5700000000);
+        mint(foundationReserveAddress, 6500000000);
 
         assert(totalSupply == 10000000000*decimalMultiplier);
     }
