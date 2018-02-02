@@ -170,14 +170,20 @@ contract Token {
     function Token () public {
         //values are in natural format
 
-        address preICOReserveAddress = 0xDE4c839cee9464212C76473420bb87eF0Da8a617;
+        address privateSaleReserveAddress = 0xFF;
         mint(preICOReserveAddress, 2000000000);
 
-        address teamReserveAddress = 0x3c0A403245F1C144207935b65da418Ddcc29c94E;
+        address teamReserveAddress = 0xFF;
         mint(teamReserveAddress, 1500000000);
         
-        address foundationReserveAddress = 0x6a6a0b4aaa60E97386F94c5414522159b45DEdE8;
-        mint(foundationReserveAddress, 6500000000);
+        address ecosystemReserveAddress = 0xFF;
+        mint(ecosystemReserveAddress, 2500000000);
+        
+        address miningReserveAddress = 0xFF;
+        mint(ecosystemReserveAddress, 1500000000);
+        
+        address foundationReserveAddress = 0xFF;
+        mint(foundationReserveAddress, 2500000000);
 
         assert(totalSupply == 10000000000*decimalMultiplier);
     }
